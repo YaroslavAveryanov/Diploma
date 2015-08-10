@@ -84,16 +84,6 @@ def svec(m):
 #	return l
 
 
-#def dupl_matrix(m):
-#	y = vec(m)
-#	x = hvec(m)
-#	n = len(m[:][0])
-#	n_trian = n*(n+1)/2
-#	matrix = creating_matrix_for_dupl(x,n)
-#	matrix = np.reshape(matrix, newshape = (n*n,n*n*n_trian))
-#	l = np.reshape(np.linalg.lstsq(matrix,y)[0],newshape = (n*n,n_trian))
-#	return l
-
 
 def elimin_matrix(m):
 	n = len(m[:][0])
