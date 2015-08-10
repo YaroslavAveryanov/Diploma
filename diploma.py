@@ -36,55 +36,6 @@ def svec(m):
 	return hvec(m)
 
 
-#def svec(m):
-#	n = len(m[:][0])
-#	m1 = np.triu(m,k = 1)
-#	m1 = np.multiply(m1,math.sqrt(2))
-#	m = np.triu(m)
-#	m = m + m1
-#	return hvec(m)
-	
-
-#def creating_matrix_for_elim(x,n):
-#	result = np.zeros(0)
-#	begin = 0
-#	end = n*n
-#	n_trian = n*(n+1)/2
-#	for i in range(n_trian):
-#		var = np.zeros(n_trian*n*n)
-#		for j in range(begin,end):
-#			var[j] = x[j - begin]
-#		result = np.concatenate((result,var))
-#		begin = begin + n*n
-#		end = end + n*n
-#	return result
-
-#def creating_matrix_for_dupl(x,n):
-#	result = np.zeros(0)
-#	n_trian = n*(n+1)/2
-#	begin = 0
-#	end = n_trian
-#	for i in range(n*n):
-#		var = np.zeros(n_trian*n*n)
-#		for j in range(begin,end):
-#			var[j] = x[j - begin]
-#		result = np.concatenate((result,var))
-#		begin = begin + n_trian
-#		end = end + n_trian
-#	return result
-
-#def elimin_matrix(m):
-#	x = vec(m)
-#	y = hvec(m)
-#	n = len(m[:][0])
-#	n_trian = n*(n+1)/2
-#	matrix = creating_matrix_for_elim(x,n)
-#	matrix = np.reshape(matrix, newshape = (n_trian,n*n*n_trian))
-#	l = np.reshape(np.linalg.lstsq(matrix,y)[0],newshape = (n_trian,n*n))
-#	return l
-
-
-
 def elimin_matrix(m):
 	n = len(m[:][0])
 	n_trian = n*(n + 1)/2
