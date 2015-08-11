@@ -145,11 +145,6 @@ def iteration(X0,a,c,alpha,eps):
 	return np.array((cur,res,w,point))
 	
 
-#print np.linalg.det(X0)
-#print vec(X0)
-#print hvec(X0)
-#print svec(X0)
-
 #---------------------------------------------------------------------------------------
 
 # From minimal edge
@@ -334,23 +329,6 @@ def iteration_final_dir(X0,a,c,alpha,eps):
 		w = w + 1
 	return np.array((cur,res,w,point))	
 
-
-
-#y1 = iteration(X0,a,c1,0.001,0.2)[3]
-#y2 = iteration_min_edge(X0,a,c1,0.001,0.2)[3]
-#y3 = iteration_final_dir(X0,a,c1,0.001,0.2)[3]
-
-#w1 = iteration(X0,a,c1,0.001,0.2)[2]
-#w2 = iteration_min_edge(X0,a,c1,0.001,0.2)[2]
-#w3 = iteration_final_dir(X0,a,c1,0.001,0.2)[2]
-
-#x1 = range(w1)
-#x2 = range(w2)
-#x3 = range(w3)
-
-#np.savetxt('test_1_02.txt',y1,delimiter = ',')
-#np.savetxt('test_2_02.txt',y2,delimiter = ',')
-#np.savetxt('test_3_02.txt',y3,delimiter = ',')
 
 
 # New step!
