@@ -29,7 +29,6 @@ def hvec(m):
 	return a
 
 def svec(m):
-	#n = len(m[:][0])
 	diagonal = np.diag(m)
 	m1 = np.multiply(np.tril(m, k = -1),math.sqrt(2))
 	m = m1 + np.diag(diagonal)
@@ -101,7 +100,7 @@ def X_kron(x):
 	
 def X_kron_tilda(x):
 	n = len(x[:][0])
-	return ln_tilda(x).dot(X_kron(x)).dot(dn_tilda(x)) # argument in ln_tilda and dn_tilda?
+	return ln_tilda(x).dot(X_kron(x)).dot(dn_tilda(x)) 
 
 def Asvec(a): 		# np.array((m1,m2))
 	m = len(a)
